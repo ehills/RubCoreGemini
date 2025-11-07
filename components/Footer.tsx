@@ -1,0 +1,71 @@
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FacebookIcon, InstagramIcon, TwitterIcon, TargetIcon } from './icons';
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-dark-secondary border-t border-dark-tertiary">
+      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="space-y-4">
+             <div className="flex items-center space-x-3">
+                <TargetIcon className="h-8 w-8 text-brand-primary" />
+                <span className="text-2xl font-extrabold text-light-primary tracking-tight">VIPER TACTICAL</span>
+             </div>
+            <p className="text-gray-400 text-base">The premier airsoft club for enthusiasts of all levels.</p>
+            <div className="flex space-x-6">
+              <a href="#" className="text-gray-400 hover:text-brand-primary">
+                <span className="sr-only">Facebook</span>
+                <FacebookIcon className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-brand-primary">
+                <span className="sr-only">Instagram</span>
+                <InstagramIcon className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-brand-primary">
+                <span className="sr-only">Twitter</span>
+                <TwitterIcon className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Quick Links</h3>
+                <ul className="mt-4 space-y-4">
+                  <li><Link to="/#about" className="text-base text-gray-400 hover:text-brand-primary">About</Link></li>
+                  <li><Link to="/#events" className="text-base text-gray-400 hover:text-brand-primary">Events</Link></li>
+                  <li><Link to="/#gallery" className="text-base text-gray-400 hover:text-brand-primary">Gallery</Link></li>
+                  <li><Link to="/#contact" className="text-base text-gray-400 hover:text-brand-primary">Contact</Link></li>
+                </ul>
+              </div>
+              <div className="mt-8 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Legal</h3>
+                <ul className="mt-4 space-y-4">
+                  <li><a href="#" className="text-base text-gray-400 hover:text-brand-primary">Privacy</a></li>
+                  <li><a href="#" className="text-base text-gray-400 hover:text-brand-primary">Terms</a></li>
+                  <li><a href="#" className="text-base text-gray-400 hover:text-brand-primary">Waiver</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="md:grid md:grid-cols-1 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
+                 <ul className="mt-4 space-y-4">
+                  <li><p className="text-base text-gray-400">contact@vipertactical.dev</p></li>
+                  <li><p className="text-base text-gray-400">123 Airsoft Lane, Anytown, USA</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 border-t border-dark-tertiary pt-8 text-center">
+          <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} Viper Tactical. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
