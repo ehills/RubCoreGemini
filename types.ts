@@ -11,4 +11,5 @@ export interface EventType {
   gameModes: string[];
   rules: string[];
   requiredGear: string[];
+  facebookEventUrl: string;
 }

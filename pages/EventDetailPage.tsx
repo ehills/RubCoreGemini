@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { EVENTS_DATA } from '../constants';
 import Seo from '../components/Seo';
-import { CalendarIcon, MapPinIcon, CheckIcon } from '../components/icons';
+import { CalendarIcon, MapPinIcon, CheckIcon, FacebookIcon } from '../components/icons';
 
 const EventDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -83,6 +84,17 @@ const EventDetailPage: React.FC = () => {
 
           {/* Sidebar */}
           <div className="space-y-8">
+            <div>
+              <a
+                href={event.facebookEventUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
+              >
+                <FacebookIcon className="w-6 h-6 mr-3" />
+                Sign Up on Facebook
+              </a>
+            </div>
             <div>
               <h3 className="text-xl font-bold text-brand-primary mb-3 border-b-2 border-dark-tertiary pb-2">Game Modes</h3>
               <div className="flex flex-wrap gap-2">

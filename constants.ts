@@ -24,6 +24,7 @@ export const EVENTS_DATA: EventType[] = [
       'Red dead rag required.',
       'No blind firing.',
     ],
+    facebookEventUrl: 'https://www.facebook.com/events/placeholder1/',
     requiredGear: [
       'Reliable Airsoft Replica',
       'Full-seal ANSI Z87.1+ rated Goggles',
@@ -54,6 +55,7 @@ export const EVENTS_DATA: EventType[] = [
       'Flashlights and tracer units highly recommended.',
       'No sound grenades before 9 PM.',
     ],
+    facebookEventUrl: 'https://www.facebook.com/events/placeholder2/',
     requiredGear: [
       'CQB-legal Airsoft Replica',
       'Full-face Mask',
@@ -85,6 +87,7 @@ export const EVENTS_DATA: EventType[] = [
       'Respect MED (Minimum Engagement Distance) rules.',
       'Call your hits loudly and clearly.',
     ],
+    facebookEventUrl: 'https://www.facebook.com/events/placeholder3/',
     requiredGear: [
       'Woodland-appropriate Airsoft Replica',
       'Eye Protection',
