@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import EventCard from '../components/EventCard';
+import Seo from '../components/Seo';
 import { EVENTS_DATA, GALLERY_IMAGES, GAME_MODES } from '../constants';
 import { ShieldIcon, BuildingIcon, TreeIcon, BoltIcon, FacebookIcon } from '../components/icons';
 
@@ -15,6 +15,12 @@ const iconMap: { [key: string]: React.FC<{ className?: string }> } = {
 const HomePage: React.FC = () => {
   return (
     <div className="animate-fade-in-up">
+      <Seo
+        title="Viper Tactical Airsoft Club | Premier Airsoft Community"
+        description="Join Viper Tactical, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
+        imageUrl="https://picsum.photos/seed/hero/1200/630"
+      />
+
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black overflow-hidden">
@@ -29,7 +35,7 @@ const HomePage: React.FC = () => {
             Experience the Adrenaline
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-light-secondary">
-            Join RuB Core Airsoft, the premier airsoft community for players of all skill levels.
+            Join Viper Tactical Airsoft, the premier airsoft community for players of all skill levels.
             Teamwork, strategy, and pure action await.
           </p>
           <Link
@@ -107,7 +113,7 @@ const HomePage: React.FC = () => {
               <div key={index} className="overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={src}
-                  alt={`Gallery image ${index + 1}`}
+                  alt={`Viper Tactical action gallery image ${index + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>

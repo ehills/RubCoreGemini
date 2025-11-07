@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { EVENTS_DATA } from '../constants';
-import { EventType } from '../types';
+import Seo from '../components/Seo';
 import { CalendarIcon, MapPinIcon, CheckIcon } from '../components/icons';
 
 const EventDetailPage: React.FC = () => {
@@ -12,6 +11,7 @@ const EventDetailPage: React.FC = () => {
   if (!event) {
     return (
       <div className="flex items-center justify-center h-screen">
+        <Seo title="Event Not Found | Viper Tactical" description="Sorry, we couldn't find the event you're looking for." />
         <div className="text-center">
           <h1 className="text-4xl font-bold text-brand-primary">Event Not Found</h1>
           <p className="mt-4 text-lg text-gray-300">Sorry, we couldn't find the event you're looking for.</p>
@@ -20,8 +20,32 @@ const EventDetailPage: React.FC = () => {
     );
   }
 
+  const eventSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: event.title,
+    startDate: new Date(event.date).toISOString(),
+    description: event.summary,
+    location: {
+      '@type': 'Place',
+      name: event.location,
+      address: event.location,
+    },
+    image: event.imageUrl,
+    organizer: {
+      '@type': 'Organization',
+      name: 'Viper Tactical Airsoft Club',
+    },
+  };
+
   return (
     <div className="animate-fade-in-up">
+      <Seo
+        title={`${event.title} | Viper Tactical Airsoft Club`}
+        description={event.summary}
+        imageUrl={event.imageUrl}
+        schema={eventSchema}
+      />
       <div className="relative h-[40vh] md:h-[50vh]">
         <img src={event.imageUrl} alt={event.title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-primary to-transparent"></div>
