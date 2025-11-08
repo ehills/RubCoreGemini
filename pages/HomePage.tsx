@@ -6,18 +6,18 @@ import { EVENTS_DATA, GALLERY_IMAGES, GAME_MODES } from '../constants';
 import { ShieldIcon, BuildingIcon, TreeIcon, BoltIcon, FacebookIcon } from '../components/icons';
 
 const iconMap: { [key: string]: React.FC<{ className?: string }> } = {
-    shield: ShieldIcon,
-    building: BuildingIcon,
-    tree: TreeIcon,
-    bolt: BoltIcon,
+  shield: ShieldIcon,
+  building: BuildingIcon,
+  tree: TreeIcon,
+  bolt: BoltIcon,
 };
 
 const HomePage: React.FC = () => {
   return (
     <div className="animate-fade-in-up">
       <Seo
-        title="Viper Tactical Airsoft Club | Premier Airsoft Community"
-        description="Join Viper Tactical, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
+        title="RuB Core Airsoft | Wellington"
+        description="Join RuB Core Airsoft, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
         imageUrl="https://picsum.photos/seed/hero/1200/630"
       />
 
@@ -26,23 +26,23 @@ const HomePage: React.FC = () => {
         <div className="absolute inset-0 bg-black overflow-hidden">
           <img
             src="https://picsum.photos/seed/hero/1920/1080"
-            alt="Airsoft players in action"
+            alt="RuB Core in action"
             className="w-full h-full object-cover opacity-40"
           />
         </div>
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-4">
-            Experience the Adrenaline
+            RuB Core Airsoft
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-light-secondary">
-            Join Viper Tactical Airsoft, the premier airsoft community for players of all skill levels.
-            Teamwork, strategy, and pure action await.
+            Join RuB Core Airsoft, the premier airsoft community for players of all skill levels.
+            "Always outnumbered, never outgunned!"
           </p>
           <Link
             to="/#events"
             className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-md text-lg uppercase tracking-wider transition-transform duration-300 transform hover:scale-105"
           >
-            See Upcoming Events
+            See our past Events
           </Link>
         </div>
       </section>
@@ -52,37 +52,46 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl mb-4">Who We Are</h2>
+              <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl mb-4">The Ruddy Bastards</h2>
               <p className="text-lg text-gray-300 mb-4">
-                Viper Tactical is more than just an airsoft club; we are a community built on sportsmanship, integrity, and a shared passion for the sport. Founded in 2015, our mission is to provide a safe, exciting, and inclusive environment for airsoft players.
+                Founded in 2010, RuB Core Airsoft has established itself as Wellington's premier airsoft club. Our motto is "Always outnumbered, never outgunned!" and we hold true to this every day.
               </p>
               <p className="text-lg text-gray-300">
-                Whether you're a seasoned veteran with a custom-built HPA rifle or a newcomer renting gear for the first time, you'll find a welcoming squad here. We organize regular events, from casual weekend skirmishes to large-scale Milsim operations.
+                We are an airsoft club with an emphasis on fighting hard and fast, having a good time and building a strong network of members who stand beside each other.
+              </p>
+              <p className="text-lg text-gray-300">
+                RuB Core operates across multiple locations throughout the Wellington region, offering diverse terrain challenges from urban close-quarter battles to expansive outdoor fields where we regularly host 80+ people events including our signature Battle Truck, RPGs and everything else required for a truly unforgettable experience. Whether you're a seasoned operator or new to the sport, our club welcomes all skill levels.
+              </p>
+              <p className="text-lg text-gray-300">
+                Safety, sportsmanship and having fun drive everything we do. Join us for skirmishes, competitive games, or a relaxed social time.
+              </p>
+              <p className="text-lg text-gray-300">
+                Whether you're a seasoned veteran with a custom-built HPA rifle or a newcomer borrowing gear for the first time, you'll find a welcoming club here. We organize regular events, from casual weekend skirmishes to large-scale operations with 80+ players.
               </p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                <img src="https://picsum.photos/seed/aboutus/800/600" alt="Team members posing" className="rounded-lg shadow-2xl"/>
+              <img src="https://picsum.photos/seed/aboutus/800/600" alt="Team members posing" className="rounded-lg shadow-2xl" />
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* How We Play Section */}
       <section id="how-we-play" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl mb-12">How We Play</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {GAME_MODES.map((mode, index) => {
-                    const Icon = iconMap[mode.icon];
-                    return (
-                        <div key={mode.name} className="bg-dark-secondary p-8 rounded-lg animate-fade-in-up" style={{ animationDelay: `${0.2 * (index + 1)}s` }}>
-                            <Icon className="h-12 w-12 mx-auto mb-4 text-brand-primary"/>
-                            <h3 className="text-xl font-bold mb-2 text-white">{mode.name}</h3>
-                            <p className="text-gray-400">{mode.description}</p>
-                        </div>
-                    );
-                })}
-            </div>
+          <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl mb-12">How We Play</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {GAME_MODES.map((mode, index) => {
+              const Icon = iconMap[mode.icon];
+              return (
+                <div key={mode.name} className="bg-dark-secondary p-8 rounded-lg animate-fade-in-up" style={{ animationDelay: `${0.2 * (index + 1)}s` }}>
+                  <Icon className="h-12 w-12 mx-auto mb-4 text-brand-primary" />
+                  <h3 className="text-xl font-bold mb-2 text-white">{mode.name}</h3>
+                  <p className="text-gray-400">{mode.description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
@@ -101,7 +110,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Gallery Section */}
       <section id="gallery" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -113,7 +122,7 @@ const HomePage: React.FC = () => {
               <div key={index} className="overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={src}
-                  alt={`Viper Tactical action gallery image ${index + 1}`}
+                  alt={`RuB Core action gallery image ${index + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
@@ -134,22 +143,22 @@ const HomePage: React.FC = () => {
               <h3 className="text-2xl font-bold text-white">Frequently Asked Questions</h3>
               <div>
                 <h4 className="font-semibold text-lg text-brand-secondary mb-1">Do I need my own equipment to play?</h4>
-                <p className="text-gray-400">Not at all! We have a full range of rental gear available, including rifles, masks, and protective vests. Just select the rental package when you sign up for an event.</p>
+                <p className="text-gray-400">Not at all! We have a full range of rental gear available, and your first games free!. We have guns, masks, vests, etc. Just let us know on the Facebook event or message us.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg text-brand-secondary mb-1">What is the minimum age to participate?</h4>
-                <p className="text-gray-400">The minimum age to play is 13. All players under 18 must have a waiver signed by a parent or legal guardian. Players 18 and over can sign for themselves.</p>
+                <h4 className="font-semibold text-lg text-brand-secondary mb-1">What is the minimum age to play?</h4>
+                <p className="text-gray-400">The minimum age to play is 18.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg text-brand-secondary mb-1">Are walk-on players welcome on event days?</h4>
-                <p className="text-gray-400">Yes, walk-ons are generally welcome. However, we highly recommend pre-registering online to guarantee your spot, especially for larger Milsim operations as they can sell out.</p>
+                <h4 className="font-semibold text-lg text-brand-secondary mb-1">Are newplayers welcome on event days?</h4>
+                <p className="text-gray-400">Yes! Please just message us or let us know on the event.</p>
               </div>
             </div>
             {/* Contact CTA */}
             <div className="bg-dark-tertiary p-8 rounded-lg text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Have More Questions?</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">How to join, or come to a game?</h3>
               <p className="text-gray-300 mb-6">
-                Our community is most active on our Facebook page. Join the conversation, ask questions, and connect with fellow players.
+                We are active on our Facebook chat so please send us a message. Join our facebook group, ask questions, and connect with a club member.
               </p>
               <a
                 href="#"

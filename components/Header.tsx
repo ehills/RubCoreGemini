@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 group">
             <TargetIcon className="h-8 w-8 text-brand-primary group-hover:animate-spin" />
-            <span className="text-2xl font-extrabold text-light-primary tracking-tight">VIPER TACTICAL</span>
+            <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/#about" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">About Us</Link>

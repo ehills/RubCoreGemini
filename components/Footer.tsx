@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
              <div className="flex items-center space-x-3">
                 <TargetIcon className="h-8 w-8 text-brand-primary" />
-                <span className="text-2xl font-extrabold text-light-primary tracking-tight">VIPER TACTICAL</span>
+                <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
              </div>
             <p className="text-gray-400 text-base">The premier airsoft club for enthusiasts of all levels.</p>
             <div className="flex space-x-6">
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                 <InstagramIcon className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-brand-primary">
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">TODO</span>
                 <TwitterIcon className="h-6 w-6" />
               </a>
             </div>
@@ -40,14 +40,7 @@ const Footer: React.FC = () => {
                   <li><Link to="/#contact" className="text-base text-gray-400 hover:text-brand-primary">Contact</Link></li>
                 </ul>
               </div>
-              <div className="mt-8 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Legal</h3>
-                <ul className="mt-4 space-y-4">
-                  <li><a href="#" className="text-base text-gray-400 hover:text-brand-primary">Privacy</a></li>
-                  <li><a href="#" className="text-base text-gray-400 hover:text-brand-primary">Terms</a></li>
-                  <li><a href="#" className="text-base text-gray-400 hover:text-brand-primary">Waiver</a></li>
-                </ul>
-              </div>
+            
             </div>
             <div className="md:grid md:grid-cols-1 md:gap-8">
               <div>
