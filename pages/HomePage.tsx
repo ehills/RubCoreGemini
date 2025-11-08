@@ -18,14 +18,14 @@ const HomePage: React.FC = () => {
       <Seo
         title="RuB Core Airsoft | Wellington"
         description="Join RuB Core Airsoft, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
-        imageUrl="https://picsum.photos/seed/hero/1200/630"
+        imageUrl="https://picsum.photos/seed/rubcorebanner/1200/630"
       />
 
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black overflow-hidden">
           <img
-            src="https://picsum.photos/seed/hero/1920/1080"
+            src="https://picsum.photos/seed/rubcorebanner/1920/1080"
             alt="RuB Core in action"
             className="w-full h-full object-cover opacity-40"
           />
@@ -99,7 +99,7 @@ const HomePage: React.FC = () => {
       <section id="events" className="py-20 bg-dark-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl text-center mb-12">
-            Upcoming Events
+            Past Events
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {EVENTS_DATA.map((event, index) => (
@@ -162,7 +162,7 @@ const HomePage: React.FC = () => {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
+                className="inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
               >
                 <FacebookIcon className="w-6 h-6 mr-3" />
                 Visit our Facebook Page

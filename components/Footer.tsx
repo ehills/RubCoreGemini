@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FacebookIcon, InstagramIcon, TwitterIcon, TargetIcon } from './icons';
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from './icons';
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-4">
              <div className="flex items-center space-x-3">
-                <TargetIcon className="h-8 w-8 text-brand-primary" />
+                <img src="https://picsum.photos/seed/rubcorelogo/64/64" alt="Rub Core Airsoft Logo" className="h-8 w-8 rounded-full" />
                 <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
              </div>
             <p className="text-gray-400 text-base">The premier airsoft club for enthusiasts of all levels.</p>
@@ -24,8 +23,8 @@ const Footer: React.FC = () => {
                 <InstagramIcon className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-brand-primary">
-                <span className="sr-only">TODO</span>
-                <TwitterIcon className="h-6 w-6" />
+                <span className="sr-only">YouTube</span>
+                <YoutubeIcon className="h-6 w-6" />
               </a>
             </div>
           </div>

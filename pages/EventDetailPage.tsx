@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { EVENTS_DATA } from '../constants';
@@ -89,7 +88,7 @@ const EventDetailPage: React.FC = () => {
                 href={event.facebookEventUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
+                className="inline-flex items-center justify-center w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
               >
                 <FacebookIcon className="w-6 h-6 mr-3" />
                 Sign Up on Facebook
@@ -121,7 +120,7 @@ const EventDetailPage: React.FC = () => {
               <ul className="space-y-2">
                 {event.requiredGear.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckIcon className="w-5 h-5 mr-2 text-orange-500 flex-shrink-0 mt-1" />
+                    <CheckIcon className="w-5 h-5 mr-2 text-brand-primary flex-shrink-0 mt-1" />
                     <span className="text-gray-300">{item}</span>
                   </li>
                 ))}
