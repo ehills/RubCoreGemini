@@ -6,6 +6,60 @@ collections_config:
     path: ''
     icon: wysiwyg
     disable_url: false
+    _editables:
+      text:
+        allow_custom_markup: true
+        remove_custom_markup: false
+        bold:
+        copyformatting:
+        italic:
+        link:
+        paths:
+        redo:
+        removeformat:
+        strike:
+        subscript:
+        superscript:
+        underline:
+        undo:
+      content:
+        allow_custom_markup: true
+        remove_custom_markup: false
+        blockquote:
+        bold:
+        bulletedlist:
+        center:
+        code:
+        copyformatting:
+        embed:
+        expandable:
+        format:
+        height: 10
+        horizontalrule:
+        image:
+        image_size_attributes: true
+        indent:
+        italic:
+        justify:
+        left:
+        link:
+        mime_type:
+        numberedlist:
+        outdent:
+        paths:
+        redo:
+        removeformat:
+        resize_style:
+        right:
+        snippet:
+        strike:
+        styles:
+        subscript:
+        superscript:
+        table:
+        underline:
+        undo:
+        width: 10
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
