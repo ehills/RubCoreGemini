@@ -1,3 +1,4 @@
+import { HashLink } from 'react-router-hash-link';
 import sevensImage from '../assets/sevens.jpg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -14,10 +15,10 @@ const Header: React.FC = () => {
             <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/#about" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">About Us</Link>
-            <Link to="/#events" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">Events</Link>
-            <Link to="/#gallery" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">Gallery</Link>
-            <Link to="/#contact" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">Contact</Link>
+            <HashLink smooth to="/#about" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">About Us</HashLink>
+            <HashLink smooth to="/#events" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">Events</HashLink>
+            <HashLink smooth to="/#gallery" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">Gallery</HashLink>
+            <HashLink smooth to="/#contact" className="text-gray-300 hover:text-brand-primary transition-colors duration-200 font-semibold">Contact</HashLink>
           </div>
           <div className="md:hidden">
             <button
@@ -38,10 +39,10 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-dark-tertiary">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
-            <Link to="/#about" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
-            <Link to="/#events" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Events</Link>
-            <Link to="/#gallery" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Gallery</Link>
-            <Link to="/#contact" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
+            <HashLink smooth to="/#about" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">About Us</HashLink>
+            <HashLink smooth to="/#events" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Events</HashLink>
+            <HashLink smooth to="/#gallery" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Gallery</HashLink>
+            <HashLink smooth to="/#contact" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Contact</HashLink>
           </div>
         </div>
       )}

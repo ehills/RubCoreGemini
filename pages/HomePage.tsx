@@ -1,7 +1,7 @@
+import { HashLink } from 'react-router-hash-link';
 import bannerImage from '../assets/banner.jpg';
 import sevensImage from '../assets/sevens.jpg';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventCard from '../components/EventCard';
 import Seo from '../components/Seo';
 import { EVENTS_DATA, GALLERY_IMAGES, GAME_MODES } from '../constants';
@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
           <img
             src={bannerImage}
             alt="RuB Core in action"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
           />
         </div>
         <div className="relative z-10 p-4">
@@ -40,12 +40,13 @@ const HomePage: React.FC = () => {
             Join RuB Core Airsoft, the premier airsoft community for players of all skill levels.
             "Always outnumbered, never outgunned!"
           </p>
-          <Link
-            to="/#events"
+          <HashLink
+            smooth
+            to="/events"
             className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-md text-lg uppercase tracking-wider transition-transform duration-300 transform hover:scale-105"
           >
             See our past Events
-          </Link>
+          </HashLink>
         </div>
       </section>
 

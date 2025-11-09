@@ -1,6 +1,6 @@
+import { HashLink } from 'react-router-hash-link';
 import sevensImage from '../assets/sevens.jpg';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from './icons';
 
 const Footer: React.FC = () => {
@@ -34,10 +34,10 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Quick Links</h3>
                 <ul className="mt-4 space-y-4">
-                  <li><Link to="/#about" className="text-base text-gray-400 hover:text-brand-primary">About</Link></li>
-                  <li><Link to="/#events" className="text-base text-gray-400 hover:text-brand-primary">Events</Link></li>
-                  <li><Link to="/#gallery" className="text-base text-gray-400 hover:text-brand-primary">Gallery</Link></li>
-                  <li><Link to="/#contact" className="text-base text-gray-400 hover:text-brand-primary">Contact</Link></li>
+                  <li><HashLink smooth to="/#about" className="text-base text-gray-400 hover:text-brand-primary">About</HashLink></li>
+                  <li><HashLink smooth to="/#events" className="text-base text-gray-400 hover:text-brand-primary">Events</HashLink></li>
+                  <li><HashLink smooth to="/#gallery" className="text-base text-gray-400 hover:text-brand-primary">Gallery</HashLink></li>
+                  <li><HashLink smooth to="/#contact" className="text-base text-gray-400 hover:text-brand-primary">Contact</HashLink></li>
                 </ul>
               </div>
             
