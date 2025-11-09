@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
           </p>
           <HashLink
             smooth
-            to="/events"
+            to="/#events"
             className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-md text-lg uppercase tracking-wider transition-transform duration-300 transform hover:scale-105"
           >
             See our recent Events
