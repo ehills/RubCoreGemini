@@ -1,3 +1,4 @@
+import sevensImage from '../assets/sevens.jpg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 group">
-            <img src="https://picsum.photos/seed/rubcorelogo/64/64" alt="Rub Core Airsoft Logo" className="h-8 w-8 group-hover:animate-spin rounded-full" />
+            <img src={sevensImage} alt="RuB Core Airsoft Logo" className="h-8 w-8 group-hover:animate-spin rounded-full" />
             <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">

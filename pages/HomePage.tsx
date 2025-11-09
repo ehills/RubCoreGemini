@@ -1,3 +1,5 @@
+import bannerImage from '../assets/banner.jpg';
+import sevensImage from '../assets/sevens.jpg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import EventCard from '../components/EventCard';
@@ -18,14 +20,14 @@ const HomePage: React.FC = () => {
       <Seo
         title="RuB Core Airsoft | Wellington"
         description="Join RuB Core Airsoft, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
-        imageUrl="https://picsum.photos/seed/rubcorebanner/1200/630"
+        imageUrl={sevensImage}
       />
 
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black overflow-hidden">
           <img
-            src="https://picsum.photos/seed/rubcorebanner/1920/1080"
+            src={bannerImage}
             alt="RuB Core in action"
             className="w-full h-full object-cover opacity-40"
           />

@@ -1,3 +1,4 @@
+import sevensImage from '../assets/sevens.jpg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from './icons';
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-4">
              <div className="flex items-center space-x-3">
-                <img src="https://picsum.photos/seed/rubcorelogo/64/64" alt="Rub Core Airsoft Logo" className="h-8 w-8 rounded-full" />
+                <img src={sevensImage} alt="Rub Core Airsoft Logo" className="h-8 w-8 rounded-full" />
                 <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
              </div>
             <p className="text-gray-400 text-base">The premier airsoft club for enthusiasts of all levels.</p>
