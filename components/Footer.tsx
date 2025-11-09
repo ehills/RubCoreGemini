@@ -45,15 +45,15 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
                  <ul className="mt-4 space-y-4">
-                  <li><p className="text-base text-gray-400">contact@vipertactical.dev</p></li>
-                  <li><p className="text-base text-gray-400">123 Airsoft Lane, Anytown, USA</p></li>
+                  <li><p className="text-base text-gray-400">romeouniformbravo@gmail.com</p></li>
+                  <li><p className="text-base text-gray-400">Wellington, New Zealand</p></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-8 border-t border-dark-tertiary pt-8 text-center">
-          <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} Viper Tactical. All rights reserved.</p>
+          <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} RuB Core. All rights reserved.</p>
         </div>
       </div>
     </footer>
