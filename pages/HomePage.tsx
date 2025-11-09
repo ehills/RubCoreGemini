@@ -145,15 +145,15 @@ const HomePage: React.FC = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-white">Frequently Asked Questions</h3>
               <div>
-                <h4 className="font-semibold text-lg text-brand-secondary mb-1">Do I need my own equipment to play?</h4>
+                <h4 className="font-semibold text-lg text-brand-primary mb-1">Do I need my own equipment to play?</h4>
                 <p className="text-gray-400">Not at all! We have a full range of rental gear available, and your first games free!. We have guns, masks, vests, etc. Just let us know on the Facebook event or message us.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg text-brand-secondary mb-1">What is the minimum age to play?</h4>
+                <h4 className="font-semibold text-lg text-brand-primary mb-1">What is the minimum age to play?</h4>
                 <p className="text-gray-400">The minimum age to play is 18.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg text-brand-secondary mb-1">Are newplayers welcome on event days?</h4>
+                <h4 className="font-semibold text-lg text-brand-primary mb-1">Are newplayers welcome on event days?</h4>
                 <p className="text-gray-400">Yes! Please just message us or let us know on the event.</p>
               </div>
             </div>

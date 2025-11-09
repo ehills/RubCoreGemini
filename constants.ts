@@ -108,8 +108,8 @@ export const GALLERY_IMAGES = [
 ];
 
 export const GAME_MODES = [
-    { name: 'Milsim', description: 'Military Simulation. Focus on realism, tactics, and objective-based gameplay.', icon: 'shield' },
-    { name: 'CQB', description: 'Close Quarters Battle. Fast-paced action in tight, indoor environments.', icon: 'building' },
     { name: 'Woodland', description: 'Classic outdoor airsoft in forest or field environments.', icon: 'tree' },
-    { name: 'Speedsoft', description: 'Competition-focused, high-speed gameplay emphasizing athleticism and aggression.', icon: 'bolt' },
+    { name: 'CQB', description: 'Close Quarters Battle. Fast-paced action in tight, indoor environments.', icon: 'building' },
+    { name: 'Custom events', description: 'Could be competition nationals focused, or handcrafted boutique story games such as Fury Forest or a mix such as our Commander Commander series.', icon: 'shield' },
+    { name: 'Battle trucks, RPGs and Shields', description: 'These are just a few of our Research and Development that have been huge successes over the years', icon: 'building' },
 ];
