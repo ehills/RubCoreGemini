@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
             to="/events"
             className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-md text-lg uppercase tracking-wider transition-transform duration-300 transform hover:scale-105"
           >
-            See our past Events
+            See our recent Events
           </HashLink>
         </div>
       </section>
@@ -102,7 +102,7 @@ const HomePage: React.FC = () => {
       <section id="events" className="py-20 bg-dark-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl text-center mb-12">
-            Past Events
+            Recent Events
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {EVENTS_DATA.map((event, index) => (

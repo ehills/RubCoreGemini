@@ -99,12 +99,12 @@ export const EVENTS_DATA: EventType[] = [
 ];
 
 export const GALLERY_IMAGES = [
-  'https://picsum.photos/seed/gallery1/600/400',
-  'https://picsum.photos/seed/gallery2/600/400',
-  'https://picsum.photos/seed/gallery3/600/400',
-  'https://picsum.photos/seed/gallery4/600/400',
-  'https://picsum.photos/seed/gallery5/600/400',
-  'https://picsum.photos/seed/gallery6/600/400',
+    '/assets/gallery/gallery1.jpg',
+    '/assets/gallery/gallery2.jpg',
+    '/assets/gallery/gallery3.jpg',
+    '/assets/gallery/gallery4.jpg',
+    '/assets/gallery/gallery5.jpg',
+    '/assets/gallery/gallery6.jpg',
 ];
 
 export const GAME_MODES = [
