@@ -73,7 +73,15 @@ const HomePage: React.FC = () => {
               </p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <img src="https://picsum.photos/seed/aboutus/800/600" alt="Team members posing" className="rounded-lg shadow-2xl" />
+              <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-2xl">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/Qc1O9WoTVdU"
+                  title="RuB Core Airsoft in action"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
