@@ -53,14 +53,21 @@ const Footer: React.FC = () => {
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
                  <ul className="mt-4 space-y-4">
                      <li>
-                         <a
-                             href="https://www.facebook.com/RubCoreAirsoft/"
-                             className="text-base text-gray-400"
-                         >
-                             <FacebookIcon className=""/> Facebook
+                         <a href="https://www.facebook.com/RubCoreAirsoft/"
+                            target="_blank"
+                            rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
+                             <span className="sr-only">Facebook</span>
+                             <FacebookIcon className="h-6 w-6" />Facebook
                          </a>
                      </li>
-                  <li><p className="text-base text-gray-400">romeouniformbravo@gmail.com</p></li>
+                  <li>
+                      <a
+                          href="mailto:romeouniformbravo@gmail.com"
+                          className="text-base text-gray-400"
+                      >
+                          romeouniformbravo@gmail.com
+                      </a>
+                      </li>
                   <li><p className="text-base text-gray-400">Wellington, New Zealand</p></li>
                 </ul>
               </div>

@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
     <div className="animate-fade-in-up">
       <Seo
         title="RuB Core Airsoft | Wellington"
-        description="Join RuB Core Airsoft, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
+        description="Join RuB Core Airsoft, in Wellington, New Zealand, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
         imageUrl={sevensImage}
       />
 
@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-4">
             RuB Core Airsoft
           </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-light-secondary">
+          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-white">
             Join RuB Core Airsoft, the premier airsoft community for players of all skill levels.
             "Always outnumbered, never outgunned!"
           </p>
@@ -56,21 +56,35 @@ const HomePage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl mb-4">The Ruddy Bastards</h2>
-              <p className="text-lg text-gray-300 mb-4">
-                Founded in 2010, RuB Core Airsoft has established itself as Wellington's premier airsoft club. Our motto is "Always outnumbered, never outgunned!" and we hold true to this every day.
-              </p>
-              <p className="text-lg text-gray-300">
-                We are an airsoft club with an emphasis on fighting hard and fast, having a good time and building a strong network of members who stand beside each other.
-              </p>
-              <p className="text-lg text-gray-300">
-                RuB Core operates across multiple locations throughout the Wellington region, offering diverse terrain challenges from urban close-quarter battles to expansive outdoor fields where we regularly host 80+ people events including our signature Battle Truck, RPGs and everything else required for a truly unforgettable experience. Whether you're a seasoned operator or new to the sport, our club welcomes all skill levels.
-              </p>
-              <p className="text-lg text-gray-300">
-                Safety, sportsmanship and having fun drive everything we do. Join us for skirmishes, competitive games, or a relaxed social time.
-              </p>
-              <p className="text-lg text-gray-300">
-                Whether you're a seasoned veteran with a custom-built HPA rifle or a newcomer borrowing gear for the first time, you'll find a welcoming club here. We organize regular events, from casual weekend skirmishes to large-scale operations with 80+ players.
-              </p>
+                <p className="text-lg text-gray-300 mb-4">
+                    We are an airsoft club with an emphasis on fighting hard and fast,
+                    having a good time and building a strong network of members who
+                    stand beside one another.
+                </p>
+
+                <p className="text-lg text-gray-300 mb-4">
+                    Founded in 2004 by a bunch of board gamers armed with springers and a lone AEG,
+                    RuB Core Airsoft established itself as a leading club within the NZ airsoft
+                    community from the very start.
+                </p>
+
+                <p className="text-lg text-gray-300 mb-4">
+                    RuB Core plays across multiple locations throughout the Wellington region,
+                    offering diverse terrain from urban close-quarter battles to expansive outdoor
+                    fields where we host annual events bringing in large numbers of players from
+                    across the country, along with our signature Battle Truck, in-house manufactured RPGs
+                    and everything else required for a truly unforgettable experience.
+                </p>
+
+                <p className="text-lg text-gray-300 mb-4">
+                    Whether you're a seasoned player or new to the sport, our club welcomes all people at
+                    all levels.
+                </p>
+
+                <p className="text-lg text-gray-300 mb-4">
+                    So if you are looking for hard and fast skirms, good sportsmanship and teamwork
+                    join us for a game play experience that will leave you wanting more; see you on the field.
+                </p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-2xl">
@@ -191,6 +205,8 @@ const HomePage: React.FC = () => {
                 <div className="space-y-3">
                     <a
                         href="https://www.facebook.com/RubCoreAirsoft/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300 w-full"
                     >
                         <FacebookIcon className="w-6 h-6 mr-3"/>
