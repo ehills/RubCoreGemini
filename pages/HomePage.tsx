@@ -5,7 +5,7 @@ import React from 'react';
 import EventCard from '../components/EventCard';
 import Seo from '../components/Seo';
 import { EVENTS_DATA, GALLERY_IMAGES, GAME_MODES } from '../constants';
-import { ShieldIcon, BuildingIcon, TreeIcon, BoltIcon, FacebookIcon } from '../components/icons';
+import { ShieldIcon, BuildingIcon, TreeIcon, BoltIcon, FacebookIcon, InstagramIcon, YoutubeIcon, MailIcon } from '../components/icons';
 
 const iconMap: { [key: string]: React.FC<{ className?: string }> } = {
   shield: ShieldIcon,
@@ -128,6 +128,23 @@ const HomePage: React.FC = () => {
           <h2 className="text-3xl font-extrabold text-brand-primary tracking-tight sm:text-4xl text-center mb-12">
             Action Gallery
           </h2>
+          <div  className="grid grid-cols-2 gap-4">
+                <a  href="https://instagram.com/rubcoreairsoft"
+                    target="_blank"
+                    rel="noopener noreferrer" className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
+                >
+                    <InstagramIcon className="w-6 h-6 mr-3"/>Instagram
+                </a>
+                <a
+                    href="https://www.youtube.com/@rubcoreairsoft6149"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
+                >
+                    <YoutubeIcon className="w-6 h-6 mr-3"/> YouTube
+                </a>
+            </div>
+          <hr className="my-8 border-t border-gray-700" />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {GALLERY_IMAGES.map((src, index) => (
               <div key={index} className="overflow-hidden rounded-lg shadow-lg">
@@ -166,18 +183,29 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             {/* Contact CTA */}
-            <div className="bg-dark-tertiary p-8 rounded-lg text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">How to join, or come to a game?</h3>
-              <p className="text-gray-300 mb-6">
+            <div className="bg-dark-tertiary p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-white mb-4 text-center">How to join, or come to a game?</h3>
+              <p className="text-gray-300 mb-6 text-center">
                 We are active on our Facebook chat so please send us a message. Join our facebook group, ask questions, and connect with a club member.
               </p>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300"
-              >
-                <FacebookIcon className="w-6 h-6 mr-3" />
-                Visit our Facebook Page
-              </a>
+                <div className="space-y-3">
+                    <a
+                        href="https://www.facebook.com/RubCoreAirsoft/"
+                        className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300 w-full"
+                    >
+                        <FacebookIcon className="w-6 h-6 mr-3"/>
+                        Facebook
+                    </a>
+                    <h3 className="text-center">OR</h3>
+                    <a
+                        href="mailto:romeouniformbravo@gmail.com"
+                        className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md text-lg transition-colors duration-300 w-full"
+                    >
+                        <MailIcon className="w-6 h-6 mr-3"/>
+                        Email Us
+                    </a>
+
+                </div>
             </div>
           </div>
         </div>

@@ -15,15 +15,21 @@ const Footer: React.FC = () => {
              </div>
             <p className="text-gray-400 text-base">The premier airsoft club for enthusiasts of all levels.</p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-brand-primary">
+              <a href="https://www.facebook.com/RubCoreAirsoft/"
+                 target="_blank"
+                 rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
                 <span className="sr-only">Facebook</span>
                 <FacebookIcon className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-brand-primary">
+              <a href="https://instagram.com/rubcoreairsoft"
+                 target="_blank"
+                 rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
                 <span className="sr-only">Instagram</span>
                 <InstagramIcon className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-brand-primary">
+              <a href="https://www.youtube.com/@rubcoreairsoft6149"
+                 target="_blank"
+                 rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
                 <span className="sr-only">YouTube</span>
                 <YoutubeIcon className="h-6 w-6" />
               </a>
@@ -46,6 +52,14 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
                  <ul className="mt-4 space-y-4">
+                     <li>
+                         <a
+                             href="https://www.facebook.com/RubCoreAirsoft/"
+                             className="text-base text-gray-400"
+                         >
+                             <FacebookIcon className=""/> Facebook
+                         </a>
+                     </li>
                   <li><p className="text-base text-gray-400">romeouniformbravo@gmail.com</p></li>
                   <li><p className="text-base text-gray-400">Wellington, New Zealand</p></li>
                 </ul>
