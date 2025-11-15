@@ -1,5 +1,6 @@
+import { HashLink } from 'react-router-hash-link';
+import sevensImage from '../assets/sevens.jpg';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from './icons';
 
 const Footer: React.FC = () => {
@@ -9,20 +10,26 @@ const Footer: React.FC = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-4">
              <div className="flex items-center space-x-3">
-                <img src="https://picsum.photos/seed/rubcorelogo/64/64" alt="Rub Core Airsoft Logo" className="h-8 w-8 rounded-full" />
+                <img src={sevensImage} alt="Rub Core Airsoft Logo" className="h-8 w-8 rounded-full" />
                 <span className="text-2xl font-extrabold text-light-primary tracking-tight">RUB CORE AIRSOFT</span>
              </div>
             <p className="text-gray-400 text-base">The premier airsoft club for enthusiasts of all levels.</p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-brand-primary">
+              <a href="https://www.facebook.com/RubCoreAirsoft/"
+                 target="_blank"
+                 rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
                 <span className="sr-only">Facebook</span>
                 <FacebookIcon className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-brand-primary">
+              <a href="https://instagram.com/rubcoreairsoft"
+                 target="_blank"
+                 rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
                 <span className="sr-only">Instagram</span>
                 <InstagramIcon className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-brand-primary">
+              <a href="https://www.youtube.com/@rubcoreairsoft6149"
+                 target="_blank"
+                 rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
                 <span className="sr-only">YouTube</span>
                 <YoutubeIcon className="h-6 w-6" />
               </a>
@@ -33,10 +40,10 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Quick Links</h3>
                 <ul className="mt-4 space-y-4">
-                  <li><Link to="/#about" className="text-base text-gray-400 hover:text-brand-primary">About</Link></li>
-                  <li><Link to="/#events" className="text-base text-gray-400 hover:text-brand-primary">Events</Link></li>
-                  <li><Link to="/#gallery" className="text-base text-gray-400 hover:text-brand-primary">Gallery</Link></li>
-                  <li><Link to="/#contact" className="text-base text-gray-400 hover:text-brand-primary">Contact</Link></li>
+                  <li><HashLink smooth to="/#about" className="text-base text-gray-400 hover:text-brand-primary">About</HashLink></li>
+                  <li><HashLink smooth to="/#events" className="text-base text-gray-400 hover:text-brand-primary">Events</HashLink></li>
+                  <li><HashLink smooth to="/#gallery" className="text-base text-gray-400 hover:text-brand-primary">Gallery</HashLink></li>
+                  <li><HashLink smooth to="/#contact" className="text-base text-gray-400 hover:text-brand-primary">Contact</HashLink></li>
                 </ul>
               </div>
             
@@ -45,15 +52,30 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
                  <ul className="mt-4 space-y-4">
-                  <li><p className="text-base text-gray-400">contact@vipertactical.dev</p></li>
-                  <li><p className="text-base text-gray-400">123 Airsoft Lane, Anytown, USA</p></li>
+                     <li>
+                         <a href="https://www.facebook.com/RubCoreAirsoft/"
+                            target="_blank"
+                            rel="noopener noreferrer" className="text-gray-400 hover:text-brand-primary">
+                             <span className="sr-only">Facebook</span>
+                             <FacebookIcon className="h-6 w-6" />Facebook
+                         </a>
+                     </li>
+                  <li>
+                      <a
+                          href="mailto:romeouniformbravo@gmail.com"
+                          className="text-base text-gray-400"
+                      >
+                          romeouniformbravo@gmail.com
+                      </a>
+                      </li>
+                  <li><p className="text-base text-gray-400">Wellington, New Zealand</p></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-8 border-t border-dark-tertiary pt-8 text-center">
-          <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} Viper Tactical. All rights reserved.</p>
+          <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} RuB Core. All rights reserved.</p>
         </div>
       </div>
     </footer>

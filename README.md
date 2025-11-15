@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# RuB Core Airsoft Website
 
-# Run and deploy your AI Studio app
+This is the official website for the RuB Core Airsoft club, a premier airsoft community based in Wellington. The website is designed to attract new members, provide information about the club, and showcase past and upcoming events.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1npN9pIflKGNENcoRgzZ10hLeXyrrHnDi
+*   **Homepage:** A comprehensive overview of the club with a hero banner, about us section, how we play, recent events, a gallery, and a contact/FAQ section.
+*   **Event Detail Pages:** Detailed information about each event, including a description, gallery, game modes, rules, and required gear.
+*   **Responsive Design:** The website is fully responsive and works on all devices.
+*   **SEO Optimized:** The website is optimized for search engines with proper meta tags and schema markup.
 
-## Run Locally
+## Technologies Used
 
-**Prerequisites:**  Node.js
+*   **React:** A JavaScript library for building user interfaces.
+*   **Vite:** A fast build tool for modern web projects.
+*   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+*   **React Router:** A routing library for React applications.
+*   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+*   Node.js (v18 or higher)
+*   npm
+
+### Installation
+
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/your_username/rub-core-gemini.git
+    ```
+2.  Install NPM packages
+    ```sh
+    npm install
+    ```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+*   `npm run dev`: Runs the app in the development mode.
+*   `npm run build`: Builds the app for production to the `dist` folder.
+*   `npm run preview`: Serves the production build locally.
+
+## Project Structure
+
+```
+.
+├── .gitignore
+├── App.tsx
+├── components
+│   ├── EventCard.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── icons.tsx
+│   └── Seo.tsx
+├── constants.ts
+├── index.html
+├── index.tsx
+├── package.json
+├── pages
+│   ├── EventDetailPage.tsx
+│   └── HomePage.tsx
+├── README.md
+├── tsconfig.json
+├── types.ts
+└── vite.config.ts
+```

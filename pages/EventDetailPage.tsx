@@ -11,7 +11,7 @@ const EventDetailPage: React.FC = () => {
   if (!event) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <Seo title="Event Not Found | Viper Tactical" description="Sorry, we couldn't find the event you're looking for." />
+        <Seo title="Event Not Found | RuB Core Airsoft Club" description="Sorry, we couldn't find the event you're looking for." />
         <div className="text-center">
           <h1 className="text-4xl font-bold text-brand-primary">Event Not Found</h1>
           <p className="mt-4 text-lg text-gray-300">Sorry, we couldn't find the event you're looking for.</p>
@@ -34,14 +34,14 @@ const EventDetailPage: React.FC = () => {
     image: event.imageUrl,
     organizer: {
       '@type': 'Organization',
-      name: 'Viper Tactical Airsoft Club',
+      name: 'RuB Core Airsoft Club',
     },
   };
 
   return (
     <div className="animate-fade-in-up">
       <Seo
-        title={`${event.title} | Viper Tactical Airsoft Club`}
+        title={`${event.title} | RuB Core Airsoft Club`}
         description={event.summary}
         imageUrl={event.imageUrl}
         schema={eventSchema}
