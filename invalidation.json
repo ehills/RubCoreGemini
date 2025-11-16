@@ -1,0 +1,12 @@
+{
+  "DistributionId": "E23MFQDPA6YJFE",
+  "InvalidationBatch": {
+    "Paths": {
+      "Quantity": 1,
+      "Items": [
+        "/*"
+      ]
+    },
+    "CallerReference": "gemini-cli-invalidation-1736928000"
+  }
+}
