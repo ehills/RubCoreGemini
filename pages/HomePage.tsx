@@ -18,8 +18,8 @@ const HomePage: React.FC = () => {
   return (
     <div className="animate-fade-in-up">
       <Seo
-        title="RuB Core Airsoft | Wellington"
-        description="Join RuB Core Airsoft, in Wellington, New Zealand, the premier airsoft community for players of all skill levels. We host Milsim, CQB, and woodland events. Teamwork, strategy, and pure action await."
+        title="RuB Core Airsoft | Always outnumbered, never outgunned!"
+        description="Join RubCore Airsoft Club in Wellington. Find games, connect with players, and dive into tactical gameplay, CQB, and milsim events."
         imageUrl={sevensImage}
       />
 
