@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
             RuB Core Airsoft
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-white">
-            Join RuB Core Airsoft, the premier airsoft community for players of all skill levels.
+            Join RuB Core Airsoft, the premier airsoft club for players of all skill levels.
             "Always outnumbered, never outgunned!"
           </p>
           <HashLink
@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
                 </p>
 
                 <p className="text-lg text-gray-300 mb-4">
-                    Founded in 2004 by a bunch of board gamers armed with springers and a lone AEG,
+                    Founded in 2004 by PC gamers armed with gas pistols, springers and a lone AEG,
                     RuB Core Airsoft established itself as a leading club within the NZ airsoft
                     community from the very start.
                 </p>
